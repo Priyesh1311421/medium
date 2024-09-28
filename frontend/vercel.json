@@ -1,18 +1,24 @@
 {
-    "version": 2,
-    "builds": [
+    "routes":[
         {
-            "src": "src/**/*",
-            "use": "@vercel/static-build",
-            "config": {
-                "distDir": "dist"
-            }
-        }
-    ],
-    "routes": [
+            "src":"/",
+            "dest":"/"
+        },
         {
-            "src": "/(.*)",
-            "dest": "/index.html"
+            "src":"/signup",
+            "dest":"/"
+        },
+        {
+            "src":"/signin",
+            "dest":"/"
+        },
+        {
+            "src":"/blogs",
+            "dest":"/"
+        },
+        {
+            "src":"/blog",
+            "dest":"/"
         }
     ]
 }
